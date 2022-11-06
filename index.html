@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="images/travel.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap4" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="css/daterangepicker.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/d48b0858c4.js" crossorigin="anonymous"></script>
+
+	<title>Let´s go DEV.</title>
+</head>
+
+<body>
+
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<!--<nav class="site-nav">
+		<div class="container">
+			<div class="site-navigation">
+				<a href="index.html" class="logo m-0">Let´s go DEV<span class="text-primary">.</span></a>
+
+				<ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><input type="submit" class="btn btn-primary btn-block" value="MAKE YOUR BUDGET" href="orcamento.html"></li>
+				</ul>
+
+				<a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+					<span></span>
+				</a>
+
+			</div>
+		</div>
+	</nav>
+-->
+<nav class="site-nav">
+	<div class="container">
+		<div class="site-navigation">
+			<a href="index.html" class="logo m-0">Let´s go DEV<span class="text-primary">.</span></a>
+
+			<ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><input onclick="handleSelect2()" type="submit" class="btn btn-primary btn-block"
+						value="MAKE YOUR BUDGET"></li>
+			</ul>
+			<script type="text/javascript">
+				function handleSelect2() {
+					window.location = "orcamento.html";
+				}
+			</script>
+
+
+			<a href="#"
+				class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+				data-toggle="collapse" data-target="#main-navbar">
+				<span></span>
+			</a>
+
+		</div>
+	</div>
+</nav>
+
+	<div class="hero">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7">
+					<div class="intro-wrap">
+						<h1 class="mb-5"><span class="d-block">Let's Enjoy Your</span>exchange trip to <span class="typed-words"></span></h1>
+						<div class="row">
+							<div class="col-12">
+								<!--<form class="form">
+									<div class="row mb-2">
+										<div class="col-sm-12 col-md-8 mb-3 mb-lg-0 col-lg-6">
+											<select name="" id="" class="form-control custom-select">
+												<option value="">Destination</option>
+												<option value="">Canada</option>
+												<option value="">Ireland</option>
+												<option value="">England</option>
+												<option value="">United States</option>
+												<option value="">Australia</option>
+											</select>
+										</div>				
+									</div>    
+									<div class="row align-items-center">
+										<div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+											<input type="submit" class="btn btn-primary btn-block" value="Search">
+										</div>	
+									</div>
+								</form> 
+							-->
+							<form class="form">
+                                    <div class="row mb-2">
+                                        <div class="col-sm-12 col-md-8 mb-3 mb-lg-0 col-lg-6">
+                                            <select name="" id="teAmo" class="form-control custom-select">
+                                                <option value="index">Destination</option>
+                                                <option value="canada">Canada</option>
+                                                <option value="ireland">Ireland</option>
+                                                <option value="england">England</option>
+                                                <option value="usa">United States</option>
+                                                <option value="australia">Australia</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                                            <input onclick="handleSelect()" class="btn btn-primary btn-block"
+                                                value="Search">
+                                            <script type="text/javascript">
+                                                function handleSelect() {
+                                                    var e = document.getElementById("teAmo");
+                                                    var value = e.value;
+                                                    window.location = value + ".html";
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="slides">
+						<img src="images/hero-slider-1.jpg" alt="Image" class="img-fluid active">
+						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-3.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-4.jpg" alt="Image" class="img-fluid">
+						<img src="images/hero-slider-5.jpg" alt="Image" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="untree_co-section">
+		<div class="container">
+			<div class="row text-center justify-content-center mb-5">
+				<div class="col-lg-7"><h2 class="section-title text-center">Services</h2></div>
+			</div>
+			<div class="row align-items-stretch">
+				<div class="col-lg-4 order-lg-1">
+					<div class="h-100"><div class="frame h-100"><div class="feature-img-bg h-100" style="background-image: url('images/hero.jpg');"></div></div></div>
+				</div>
+
+				<div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1" >
+
+					<div class="feature-1 d-md-flex">
+						<div class="align-self-center">
+							<i class="fa-solid fa-plane display-4 text-primary"></i>
+							<h3 class="mt-2">Airfare</h3>
+							<p class="mb-0">Let's go DEV issues tickets to all destinations.</p>
+						</div>
+					</div>
+
+					<div class="feature-1 ">
+						<div class="align-self-center">
+							<i class="fa-solid fa-passport display-4 text-primary"></i>
+							<h3 class="mt-2">Visa</h3>
+							<p class="mb-0">We work with the best consular brokers that will definitely increase your chances of getting a visa.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3" >
+
+					<div class="feature-1 d-md-flex">
+						<div class="align-self-center">
+							<i class="fa-solid fa-arrow-right-arrow-left display-4 text-primary"></i>
+							<h3 class="mt-2">Exchange</h3>
+							<p class="mb-0">We work with exchange offices approved by the Central Bank, which ensures the origin of the foreign currency.</p>
+						</div>
+					</div>
+
+
+					<div class="feature-1 d-md-flex">
+						<div class="align-self-center">
+							<i class="fa-solid fa-plane-departure display-4 text-primary"></i>
+							<h3 class="mt-2">Travel insurance</h3>
+							<p class="mb-0">Through health and travel insurance you will be entitled to medical and hospital treatment, payment of medicines and also luggage coverage, among others.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="untree_co-section count-numbers py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="counter-wrap">
+						<div class="counter">
+							<span class="" data-number="2700">0</span>
+						</div>
+						<span class="caption">No. of Travels</span>
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="counter-wrap">
+						<div class="counter">
+							<span class="" data-number="1250">0</span>
+						</div>
+						<span class="caption">No. of Clients</span>
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="counter-wrap">
+						<div class="counter">
+							<span class="" data-number="49">0</span>
+						</div>
+						<span class="caption">No. of Employees</span>
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+					<div class="counter-wrap">
+						<div class="counter">
+							<span class="" data-number="6">0</span>
+						</div>
+						<span class="caption">No. of Countries</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="untree_co-section">
+		<div class="container">
+			<div class="row text-center justify-content-center mb-5">
+				<div class="col-lg-7"><h2 class="section-title text-center">Popular Destination</h2></div>
+			</div>
+
+			<div class="owl-carousel owl-3-slider">
+
+				<div class="item">
+					<a class="media-thumb" href="images/vancouver.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Vancouver</h3>
+							<span class="location">Canada</span>
+						</div>
+						<img src="images/vancouver.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/sydney.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Sydney</h3>
+							<span class="location">Australia</span>
+						</div>
+						<img src="images/sydney.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/london.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>London</h3>
+							<span class="location">England</span>
+						</div>
+						<img src="images/london.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+
+				<div class="item">
+					<a class="media-thumb" href="images/dublin.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Dublin</h3>
+							<span class="location">Ireland</span>
+						</div>
+						<img src="images/dublin.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+
+				<div class="item">
+					<a class="media-thumb" href="images/houston.jpg" data-fancybox="gallery">
+						<div class="media-text">
+							<h3>Houston, Texas</h3>
+							<span class="location">United States</span>
+						</div>
+						<img src="images/houston.jpg" alt="Image" class="img-fluid">
+					</a> 
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="untree_co-section">
+		<div class="container">
+			<div class="row justify-content-center text-center mb-5">
+				<div class="col-lg-6">
+					<h2 class="section-title text-center mb-3">Special Offers &amp; Discounts</h2>
+					<p>The exchange rate varies according to the chosen destination, duration, school and accommodation and may change due to possible exchange rate changes. Payment and installment methods can be consulted with us, we will be ready to answer any questions you may have.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+					<div class="media-1">
+						<a href="https://www.languagesacrossborders.com/" class="d-block mb-3" target="_blank" rel="noopener noreferrer"><img src="images/lab.jpg" alt="Image" class="img-fluid"></a>
+						<span class="d-flex align-items-center loc mb-2">
+							<span class="icon-room mr-3"></span>
+							<span>Vancouver,Canada.</span>
+						</span>
+						<div class="d-flex align-items-center">
+							<div>
+								<h3><a href="https://www.languagesacrossborders.com/"></a>LAB - English Plus - Game Design and VFX</h3>
+								<div class="price ml-auto">
+									<span><font size="1">from</font> <br />$562.13</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+					<div class="media-1">
+						<a href="https://www.princeton.edu/" class="d-block mb-3" target="_blank" rel="noopener noreferrer"><img src="images/princeton.jpg" alt="Image" class="img-fluid"></a>
+						<span class="d-flex align-items-center loc mb-2">
+							<span class="icon-room mr-3"></span>
+							<span>New Jersey,United States.</span>
+						</span>
+						<div class="d-flex align-items-center">
+							<div>
+								<h3><a href="https://www.princeton.edu/">ID Tech Camp - Princeton</a></h3>
+								<div class="price ml-auto">
+									<span><font size="1">from</font> <br />$1951.58</span>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+					<div class="media-1">
+						<a href="https://www.bucksmore.com/" class="d-block mb-3" target="_blank" rel="noopener noreferrer"><img src="images/buckmore.jpg" alt="Image" class="img-fluid"></a>
+						<span class="d-flex align-items-center loc mb-2">
+							<span class="icon-room mr-3"></span>
+							<span>Brighton, England.</span>
+						</span>
+						<div class="d-flex align-items-center">
+							<div>
+								<h3><a href="https://www.bucksmore.com/">Bucksmore-Tech Camp</a></h3>
+								<div class="price ml-auto">
+									<span><font size="1">from</font> <br />$1818.47</span>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+					<div class="media-1">
+						<a href="https://www.catsacademyboston.com/" class="d-block mb-3" target="_blank" rel="noopener noreferrer"><img src="images/cats.jpg" alt="Image" class="img-fluid"></a>
+
+						<span class="d-flex align-items-center loc mb-2">
+							<span class="icon-room mr-3"></span>
+							<span>Boston, Massachusetts.</span>
+						</span>
+
+						<div class="d-flex align-items-center">
+							<div>
+								<h3><a href="https://www.catsacademyboston.com/">Camp Tech - CATS Academy</a></h3>
+								<div class="price ml-auto">
+									<span><font size="1">from</font> <br />$2561.30</span>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<p><font size="1">*Prices below do not include airfare.</font></br></p>
+		</div>
+	</div>
+
+	<div class="untree_co-section">
+		<div class="container">
+			<div class="row aboutus justify-content-center text-center mb-5">
+				<div class="col-lg-9">
+					<h2 class="section-title text-center mb-3">ABOUT US</h2>
+					<p class="text-justify">We were founded in 2022 with the purpose of being the main exchange agency aimed at students and programming professionals in Brazil.</br>
+						Innovation is in our DNA and in our way of doing exchanges. That's why, at <b>Let's go DEV</b>, you'll find the best options for traveling and studying abroad.</br>
+						Count on our experts to find the program that suits you, without paying more for it! Here, you are supported from the beginning to the end of your trip with customer service 7 days a week.</br>
+						We are with you before, during and after your exchange experience. Whatever your destination, we help you make your dreams come true and always fly further.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--
+	<div class="untree_co-section testimonial-section mt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7 text-center">
+					<h2 class="section-title text-center mb-5">Testimonials</h2>
+
+					<div class="owl-single owl-carousel no-nav">
+						<div class="testimonial mx-auto">
+							<figure class="img-wrap">
+								<img src="images/person_2.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<h3 class="name">Adam Aderson</h3>
+							<blockquote>
+								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							</blockquote>
+						</div>
+
+						<div class="testimonial mx-auto">
+							<figure class="img-wrap">
+								<img src="images/person_3.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<h3 class="name">Lukas Devlin</h3>
+							<blockquote>
+								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							</blockquote>
+						</div>
+
+						<div class="testimonial mx-auto">
+							<figure class="img-wrap">
+								<img src="images/person_4.jpg" alt="Image" class="img-fluid">
+							</figure>
+							<h3 class="name">Kayla Bryant</h3>
+							<blockquote>
+								<p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+							</blockquote>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div> 
+	-->
+
+	<!--<div class="untree_co-section">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				
+				<div class="col-lg-6">
+					<figure class="img-play-video">
+						<a id="play-video" class="video-play-button" href="https://www.youtube.com/watch?v=mwtbEGNABWU" data-fancybox>
+							<span></span>
+						</a>
+						<img src="images/hero-slider-2.jpg" alt="Image" class="img-fluid rounded-20">
+					</figure>
+				</div>
+
+				<div class="col-lg-5">
+					<h2 class="section-title text-left mb-4">Take a look at Tour Video</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+					<p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+					<ul class="list-unstyled two-col clearfix">
+						<li>Outdoor recreation activities</li>
+						<li>Airlines</li>
+						<li>Car Rentals</li>
+						<li>Cruise Lines</li>
+						<li>Hotels</li>
+						<li>Railways</li>
+						<li>Travel Insurance</li>
+						<li>Package Tours</li>
+						<li>Insurance</li>
+						<li>Guide Books</li>
+					</ul>
+
+					<p><a href="#" class="btn btn-primary">Get Started</a></p>
+
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+-->
+	
+	
+	<div class="py-5 cta-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-12">
+					<h2 class="mb-2 text-white">Contact Us Now</h2>
+					<p class="mb-4 lead text-white text-white-opacity">Take all your doubts with a specialized consultant.</br></p>
+					<p class="mb-0"><a href="contact.html" class="btn btn-outline-white text-white btn-md font-weight-bold">Get in touch</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-footer">
+		<div class="inner first">
+			<div class="container">
+				<div class="row">
+					<!--<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<h3 class="heading">About Tour</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+						<div class="widget">
+							<ul class="list-unstyled social">
+								<li><a href="#"><span class="icon-twitter"></span></a></li>
+								<li><a href="#"><span class="icon-instagram"></span></a></li>
+								<li><a href="#"><span class="icon-facebook"></span></a></li>
+								<li><a href="#"><span class="icon-linkedin"></span></a></li>
+								<li><a href="#"><span class="icon-dribbble"></span></a></li>
+								<li><a href="#"><span class="icon-pinterest"></span></a></li>
+								<li><a href="#"><span class="icon-apple"></span></a></li>
+								<li><a href="#"><span class="icon-google"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2 pl-lg-5">
+						<div class="widget">
+							<h3 class="heading">Pages</h3>
+							<ul class="links list-unstyled">
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2">
+						<div class="widget">
+							<h3 class="heading">Resources</h3>
+							<ul class="links list-unstyled">
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>-->
+					<div class="col-md-6 col-lg-6">
+						<div class="widget">
+							<h3 class="heading">Contact</h3>
+							<ul class="list-unstyled quick-info links">
+								<li class="email"><a href="#">letsgodev@gmail.com</a></li>
+								<li class="phone"><a href="#">+0 000 000 0000</a></li>
+								<li class="address"><a href=""> Av Marginal 585 Fazenda Nossa Senhora Aparecida do Jaguari. São João da Boa Vista - SP.</a></li>
+								<!--<div class="col-md-6 col-lg-3">
+									<div class="widget">
+										<ul class="list-unstyled quick-info links">
+											<iframe class="m-0 m-auto" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14800.609794692837!2d-46.812696!3d-21.9671114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c68374dfb5e08c0!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20C%C3%A2mpus%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista!5e0!3m2!1spt-BR!2sbr!4v1667324390167!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+										</ul>
+									</div>
+								</div> -->
+							</ul>
+							
+						</div>
+					</div>
+								
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="inner dark">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 mb-3 mb-md-0 mx-auto">
+						<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by Let´s go Dev.</a>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="overlayer"></div>
+	<div class="loader">
+		<div class="spinner-border" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/daterangepicker.js"></script>
+
+	<script src="js/typed.js"></script>
+	<script>
+		$(function() {
+			var slides = $('.slides'),
+			images = slides.find('img');
+
+			images.each(function(i) {
+				$(this).attr('data-id', i + 1);
+			})
+
+			var typed = new Typed('.typed-words', {
+				strings: ["Canada.","Ireland."," England.", " United States.", " Australia."],
+				typeSpeed: 80,
+				backSpeed: 80,
+				backDelay: 4000,
+				startDelay: 1000,
+				loop: true,
+				showCursor: true,
+				preStringTyped: (arrayPos, self) => {
+					arrayPos++;
+					console.log(arrayPos);
+					$('.slides img').removeClass('active');
+					$('.slides img[data-id="'+arrayPos+'"]').addClass('active');
+				}
+
+			});
+		})
+	</script>
+
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>
